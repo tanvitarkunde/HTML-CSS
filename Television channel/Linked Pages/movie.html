@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Movies</title>
+        <link rel="stylesheet" href="../Style/style.css">
+         <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+        <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+        <!-- Load icon library -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        
+
+        <script src="back.js">defer</script>
+
+    </head>
+    <body style="background-color: black;">
+        <!--navigation bar-->
+        <nav class="navbar navbar-expand-lg navbar-light " style="background-color: khaki">
+            <a class="navbar-brand" href="../home.html">
+                <img src="../Linked Pages/logo 365.JPG" style=" border-radius: 15px;box-shadow: 8px 8px 5px grey;"  width="50" height="50" alt="" loading="lazy">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="../Linked Pages/movie.html">Movies <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">TV Series</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Audio</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <br>
+        <!--carousel-->
+        <div id="carouselExampleIndicators" class="carousel slide"  >
+            <div class="carousel-inner" style=" width:95%; height: 500px;">
+                <div class="carousel-item active">
+                <img src="https://www.seelatest.com/images/maxresdefault%20(54).jpg" class="d-block w-100" style="width:100%; height: 500px;"  alt="...">
+                </div>
+                <div class="carousel-item ">
+                <img src="https://th.bing.com/th/id/OIP.XQvQw1SzR-G9UkhTRfavaQHaEn?pid=Api&rs=1" class="d-block w-100"style="width:100%; height: 500px;"alt="...">
+                </div>
+                <div class="carousel-item">
+                <img src="https://2.bp.blogspot.com/-lynXS9WFH_I/T_WedNRg2rI/AAAAAAAAQrk/OdKDNnXgG5Y/s1600/top-jabba-godfather.jpg" class="d-block w-100"style="width:100%; height: 500px;" alt="...">
+                </div>
+                <div class="carousel-item">
+                <img src="https://th.bing.com/th/id/OIP.GAGYuj3b1zSZ2odIYNCEVQHaDt?pid=Api&rs=1" class="d-block w-100"style="width:100%; height: 500px;" alt="...">
+                </div>
+                <div class="carousel-item">
+                <img src="https://th.bing.com/th/id/OIP.sHD1PiPdhFGPkv8bddCuXQHaEE?pid=Api&rs=1" class="d-block w-100"style="width:100%; height: 500px;" alt="...">
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+
+        <!--dropdown and search bar-->
+        <div class="dropdown"> 
+            <!--<button type="select"> Genre &#9662;</button>-->
+            <select name="Genre" id="Genre">
+                <option value="All" href="#all">All</option>
+                <option value="Action" ><a href="#ACTION">Action</a></option>
+                <option value="Drama">Drama</option>
+                <option value="Sci-Fi">Sci-Fi</option>
+            </select>
+            
+            <!--search bar-->
+            <input type="Search" placeholder="Search your favourite movie title here" >
+            <button type="submit"><i class="fa fa-search"></i></button>
+            
+        </div>
+
+        <!--movie list-->
+        <div class="horizantal-align" id="all">
+            <div class="row" id="action">
+                <div class="column"><img src="https://th.bing.com/th/id/OIP.g-odYHOW3O-FDPgCmvUOcAHaKq?pid=Api&rs=1">
+                    <div class="text-block">
+                        <p><b>Gunday</b><br>
+                        2014 Indian Hindi gangster thriller film</p>
+                    </div>
+                </div>
+                <div class="column"><img src="https://th.bing.com/th/id/OIP.QOV6C6rlVAh-jALCFbOwjQHaLA?pid=Api&rs=1" >
+                    <div class="text-block">
+                        <p><b>Casino Royale</b><br>
+                            2006 spy film</p>
+                    </div>
+                </div>
+                <div class="column"><img src="https://th.bing.com/th/id/OIP.lL0j4mWahnoonye43uiL3wHaKY?pid=Api&rs=1">
+                    <div class="text-block">
+                        <p><b>Once Upon A Time In Mumbaai</b><br>
+                            2010 Indian Hindi gangster film</p>
+                    </div>
+                </div>
+                <div class="column"><img src="https://th.bing.com/th/id/OIP.LFUSq-rmqrUHnIqGXg-rpgHaK_?pid=Api&rs=1" >
+                    <div class="text-block">
+                        <p><b>Bad Boys II</b><br>
+                            2003 American action comedy film</p>
+                    </div>
+                </div>
+                <div class="column"><img src="https://th.bing.com/th/id/OIP.wu_NJOYOTUN2Mq47hDHREwHaJ4?pid=Api&rs=1" >
+                    <div class="text-block">
+                        <p><b>Holiday</b><br>
+                            2014 Indian action film</p>
+                    </div>
+                </div>
+                <div class="column"><img src="http://www.cinetalkers.com/wp-content/uploads/2014/11/Action-Jackson.jpg" >
+                    <div class="text-block">
+                        <p><b>Action Jackson</b><br>
+                            2014 Indian Hindi action thriller film</p>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="row" id="ACTION" >
+                <div class="column"><img src="https://th.bing.com/th/id/OIP.6mJB0I4-0nGYmhqcKQ6jjwHaID?pid=Api&w=639&h=695&rs=1">
+                    <div class="text-block">
+                        <p><b>War</b><br>
+                            2019 Indian Hindi action thriller film</p>
+                    </div>
+                </div>
+                <div class="column"><img src="https://th.bing.com/th/id/OIP.i1lZL-GWMk26HkxjzQKcPQHaK-?pid=Api&rs=1" >
+                    <div class="text-block">
+                        <p><b>Extraction</b><br>
+                            2020 American action-thriller film</p>
+                    </div>
+                </div>
+                <div class="column"><img src="https://upload.wikimedia.org/wikipedia/en/7/70/Brothers_film_poster_new_1.jpeg">
+                    <div class="text-block">
+                        <p><b>Brothers</b><br>
+                            2015 action film</p>
+                    </div>
+                </div>
+                <div class="column"><img src="http://2.bp.blogspot.com/-_y0xa-sriXs/VUOvi-U8udI/AAAAAAAAKS8/QUMZRmErC4g/s1600/Gabbar-Is-Back-Movie-Poster-Akshay-Kumar.jpg" >
+                    <div class="text-block">
+                        <p><b>Gabbar Is Back</b><br>
+                            2015 Indian Hindi vigilante action film</p>
+                    </div>
+                </div>
+                <div class="column"><img src="https://images.hungama.com/c/1/d01/769/2019240/2019240_1280x800.jpg" >
+                    <div class="text-block">
+                        <p><b>Rush Hour 3</b><br>
+                            2007 American action comedy film</p>
+                    </div>
+                </div>
+                <div class="column"><img src="data:image/jpeg;base64,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" >
+                    <div class="text-block">
+                        <p><b>Rocky Handsome</b><br>
+                            2016 Indian Hindi action thriller film</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row" id="drama">
+                <div class="column"><img src="https://th.bing.com/th/id/OIP.3Gem4eSDRZQH50JbRxE0sAHaKj?w=187&h=267&c=7&o=5&pid=1.7">
+                    <div class="text-block">
+                        <p><b>Titanic</b><br>
+                            1997 American epic romance-disaster film </p>
+                    </div>
+                </div>
+                <div class="column"><img src="https://images.news18.com/ibnlive/uploads/2020/03/Angrezi-Medium.jpg" >
+                    <div class="text-block">
+                        <p><b>Angrezi Medium</b><br>
+                            2020 Indian Hindi comedy drama film  </p>
+                    </div>
+                </div>
+                <div class="column"><img src="https://th.bing.com/th/id/OIP.MyLyv7dLdSISQgar2Uyf5wHaEK?pid=Api&rs=1">
+                    <div class="text-block">
+                        <p><b>Yeh Jawaani Hai Deewani</b><br>
+                            2013 drama-romance film </p>
+                    </div>
+                </div>
+                <div class="column"><img src="https://th.bing.com/th/id/OIP.IIAzI-I5RN8LxgfyFZ6dVgHaK-?pid=Api&rs=1" >
+                    <div class="text-block">
+                        <p><b>Roma</b><br>
+                            2018 Mexican drama film </p>
+                    </div>
+                </div>
+                <div class="column"><img src="https://th.bing.com/th/id/OIP.Q_L7foiEKu1WYwz_uwxFKAHaKl?pid=Api&rs=1" >
+                    <div class="text-block">
+                        <p><b>Kal Ho Naa Ho</b><br>
+                            2003 Hindi Comedy Drama motion film </p>
+                    </div>
+                </div>
+                <div class="column"><img src="https://www.uphe.com/sites/default/files/styles/scale__344w_/public/TeenSpirit_PosterArt.jpg?itok=zZen-99g" >
+                    <div class="text-block">
+                        <p><b>Teen Spirit</b><br>
+                            2018 musical drama film  </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row" id="drama" >
+                <div class="column"><img src="https://th.bing.com/th/id/OIP.PGtwLZqq5LWtRvR-akn77AHaF7?pid=Api&rs=1" >
+                    <div class="text-block">
+                        <p><b>Wake Up Sid</b><br>
+                            2009 Indian Hindi comedy drama film </p>
+                    </div>
+                </div>
+                <div class="column"><img src="https://www.tarshi.net/inplainspeak/wp-content/uploads/2019/05/1-11.jpg" >
+                    <div class="text-block">
+                        <p><b>Kabhi Khushi Kabhie Gham</b><br>
+                            2001 Indian Hindi melodrama film </p>
+                    </div> 
+                </div>
+                <div class="column"><img src="https://th.bing.com/th/id/OIP.nNjgt7JsOBdhbs7JT-EC5gHaKs?pid=Api&rs=1" >
+                    <div class="text-block">
+                        <p><b>Swades</b><br>
+                            2004 Indian Hindi drama film </p>
+                    </div> 
+                </div>
+                <div class="column"><img src="https://th.bing.com/th/id/OIP.9NEXst3CbU_B_rLKpQKryAHaKl?pid=Api&rs=1" >
+                    <div class="text-block">
+                        <p><b>Unforgiven</b><br>
+                            Russian drama film </p>
+                    </div> 
+                </div>
+                <div class="column"><img src="https://i.ytimg.com/vi/x_7YlGv9u1g/maxresdefault.jpg" >
+                    <div class="text-block">
+                        <p><b>Dangal</b><br>
+                            2016 Indian Hindi sports drama film </p>
+                    </div> 
+                </div>
+                <div class="column"><img src="https://material.asset.catchplay.com/CCE-TW-002-A1135/artworks/posters/CCE-TW-002-A1135-P544.jpg?hash=1625204715" >
+                    <div class="text-block">
+                        <p><b>Waterlily Jaguar</b><br>
+                            2018 drama film </p>
+                    </div> 
+                </div>
+           </div>
+           <div class="row"id="scifi">
+                <div class="column"><img src="https://th.bing.com/th/id/OIP.D6hFmZTPLQ8cs5dkaMZpLwHaLH?pid=Api&rs=1" >
+                    <div class="text-block">
+                        <p><b>Gravity</b><br>
+                            2013 science fiction thriller film </p>
+                    </div>
+                </div>
+                <div class="column"><img src="https://th.bing.com/th/id/OIP.5-5AcRMDK8YjcBwImAhcKQAAAA?pid=Api&rs=1" >
+                    <div class="text-block">
+                        <p><b>Back to the Future</b><br>
+                            1985 American science fiction film</p>
+                    </div>
+                </div>
+                <div class="column"><img src="https://th.bing.com/th/id/OIP.nBsyFK4PjkJVV8ERVCaqugHaF7?pid=Api&rs=1" >
+                    <div class="text-block">
+                        <p><b>Action Replayy</b><br>
+                            2010 Indian Hindi science-fiction romantic comedy film</p>
+                    </div>
+                </div>
+                <div class="column"><img src="https://th.bing.com/th/id/OIP.BJaiolu2Qw2Ztl-8P7Y5lwHaKj?pid=Api&rs=1" >
+                    <div class="text-block">
+                        <p><b>Jurassic World</b><br>
+                            American science fiction adventure film</p>
+                    </div>
+                </div>
+                <div class="column"><img src="http://hellhorror.com/images/inTheaters/origs/f005f-marvel-black-panther-poster.jpeg" >
+                    <div class="text-block">
+                        <p><b>Black Panther</b><br>
+                            American science fiction adventure film</p>
+                    </div>
+                </div>
+                <div class="column"><img src="https://th.bing.com/th/id/OIP.gN-yokCZ8T7pWuGNEaLDegHaFD?pid=Api&rs=1" >
+                    <div class="text-block">
+                        <p><b>Krrish 3</b><br>
+                            American science fiction adventure film</p>
+                    </div>
+                </div>
+           </div>
+           <div class="row" id="scifi" >
+                <div class="column"><img src="https://th.bing.com/th/id/OIP.aSmn77RDxacFIL33AxOzjgHaLG?pid=Api&rs=1" >
+                    <div class="text-block">
+                        <p><b>Deadpool</b><br>
+                            2016 American superhero film </p>
+                    </div>
+                </div>
+                <div class="column"><img src="https://image.tmdb.org/t/p/original/wZGlaMxBAjCIYLzyDWvocaoNooZ.jpg" >
+                    <div class="text-block">
+                        <p><b>Spiderman</b><br>
+                            2002 American superhero film </p>
+                    </div>
+                </div>
+                <div class="column"><img src="https://th.bing.com/th/id/OIP.ZJX2BQuq3z8T0uqdlnXM8AHaDt?w=340&h=175&c=7&o=5&pid=1.7" >
+                    <div class="text-block">
+                        <p><b>A Flying Jatt</b><br>
+                            2016 Indian Hindi superhero film </p>
+                    </div>
+                </div>
+                <div class="column"><img src="https://th.bing.com/th/id/OIP.uLEUxgDkMeQtu0qNp3b7iQHaKM?pid=Api&rs=1">
+                    <div class="text-block">
+                        <p><b>Creature 3D</b><br>
+                            monster thriller science fiction film </p>
+                    </div>
+                </div>
+                <div class="column"><img src="https://th.bing.com/th/id/OIP.gedcWq-myC6GuFq-Wn86LAHaKg?pid=Api&rs=1">
+                    <div class="text-block">
+                        <p><b>Venom</b><br>
+                            2018 American superhero film </p>
+                    </div>
+                </div>
+                <div class="column"><img src="http://gonewiththetwins.com/new/wp-content/uploads/2014/01/avatar.jpg" >
+                    <div class="text-block">
+                        <p><b>Avatar</b><br>
+                            2009 American epic science fiction film </p>
+                    </div>
+                </div>
+           </div>
+        </div>
+
+        <!--footer-->
+        <div class="footer">
+            <p style="margin-left:20px; height:60px;">
+                <a href="../home.html">
+
+                    <img src="logo 365.JPG" style="margin-top:5px;  border-radius: 15px;" width="50" height="50" alt="" loading="lazy">
+                </a>    
+           
+            &nbsp;&nbsp;&nbsp; &nbsp;Powered by 365 Entertainment Portal 2019. All Rights Reserved.</p>
+        </div>
+        
+        
+    </body>
+</html>
