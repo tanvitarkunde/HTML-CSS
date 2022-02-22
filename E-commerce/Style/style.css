@@ -1,0 +1,68 @@
+
+body{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    
+}
+.carousel-inner{
+  margin-left: 50px;
+  width:95%;
+}    
+
+/* Typing animation */
+@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro');
+
+
+.typing p {
+  border-right: solid 3px  gray;
+  white-space: nowrap;
+  overflow: hidden;    
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; 
+  font-size: 28px;
+  color: gray;
+}
+    
+/* Animation */
+.typing p {
+  animation: animated-text 4s steps(29,end) 1s 1 normal both,
+  animated-cursor 600ms steps(29,end) infinite;
+}
+    
+/* text animation */
+    
+@keyframes animated-text{
+  from{width: 0;}
+  to{width: 1300px;}
+}
+    
+/* cursor animations */
+    
+@keyframes animated-cursor{
+  from{border-right-color:  gray;}
+  to{border-right-color: transparent;}
+}    
+
+.card{
+  border-radius: 10px;
+  padding: 5px;
+ background-color: azure;
+  margin: 10px; 
+  width: 50px;
+}
+
+/* Card Text css */
+.card-text{
+  text-align: left;
+  font-size: 18px;
+}
+
+.card img{
+  height:40%;
+}  
+
+footer{
+  background-color: rgb(43, 40, 40);
+}
+
+
